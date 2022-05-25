@@ -20,7 +20,7 @@ export class Tab2Page {
 
   constructor() {}
 
-  public cadastrar(): void {
+  public votar(): void {
     if(this.candidato === '13'|| this.candidato === '22' || this.candidato === '12'){
       this.contTotal++;
     }

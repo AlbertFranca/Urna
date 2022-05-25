@@ -15,12 +15,12 @@
   <ion-card>
     <ion-card-header>
       <ion-item>
-        <ion-thumbnail slot="start">
+        <ion-thumbnail slot="start" >
           <ion-img src={{foto}}></ion-img>
         </ion-thumbnail>
 
-          <ion-label position="stacked">{{nome}}</ion-label>
-          <ion-label position="stacked">Partido: {{partido}}</ion-label>
+          <ion-label position="stacked"> Candidato: {{nome}}</ion-label>
+          <ion-label position="stacked"> Partido: {{partido}}</ion-label>
       </ion-item>
       <form id="formulario">
       <ion-item>
@@ -30,7 +30,7 @@
     </form>
       <ion-row>
         <ion-col size="6">
-          <ion-button expand="block" size="large" color="danger" (click)="cadastrar()">corrige</ion-button>
+          <ion-button expand="block" size="large" color="danger" (click)="votar()">corrige</ion-button>
         </ion-col>
         <ion-col size="6">
           <ion-button expand="block" size="large" color="success">confirma</ion-button>

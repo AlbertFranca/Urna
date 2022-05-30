@@ -15,40 +15,44 @@
   <ion-card>
     <ion-card-header>
       <ion-item>
-        <ion-thumbnail slot="start">
+        <ion-thumbnail slot="start" >
           <ion-img src={{foto}}></ion-img>
         </ion-thumbnail>
 
-          <ion-label position="stacked">{{nome}}</ion-label>
-          <ion-label position="stacked">Partido: {{partido}}</ion-label>
+          <ion-label position="stacked"> Candidato: {{nome}}</ion-label>
+          <ion-label position="stacked"> Partido: {{partido}}</ion-label>
       </ion-item>
       <form id="formulario">
       <ion-item>
-        <ion-input  name="candidato" [(ngModel)]="candidato" class="candidato" type="text" ></ion-input>
+        <ion-input  id="candidato" name="candidato" [(ngModel)]="candidato" class="candidato" type="text"></ion-input>
 
       </ion-item>
     </form>
       <ion-row>
         <ion-col size="6">
-          <ion-button expand="block" size="large" color="danger" (click)="cadastrar()">corrige</ion-button>
+          <ion-button expand="block" size="large" color="success" (click)="votar()">Votar</ion-button>
         </ion-col>
         <ion-col size="6">
-          <ion-button expand="block" size="large" color="success">confirma</ion-button>
+          <ion-button expand="block" size="large" color="danger" (click)="corrigir()">Corrigir</ion-button>
         </ion-col>
         </ion-row>
 
     </ion-card-header>
 
     <ion-card-content>
+      <h1>Selecione seu candidato</h1>
       <ion-row>
         <ion-col size="4">
-          <ion-img src="../../assets/img/lula-agencia-brasil-e1650648931917.jpg"></ion-img>
+          <input type="image" src="../../assets/img/lula-agencia-brasil-e1650648931917.jpg" style="border: double;" height="50" width="100" (click)="lula()"/>
+          <!-- <ion-img src="../../assets/img/lula-agencia-brasil-e1650648931917.jpg"></ion-img> -->
         </ion-col>
         <ion-col size="4">
-          <ion-img src="../../assets/img/bosonaro.jpg"></ion-img>
+          <input type="image" src="../../assets/img/bosonaro.jpg" style="border: double;" height="50" width="100" (click)="bosonaro()"/>
+        <!--   <ion-img src="../../assets/img/bosonaro.jpg"></ion-img> -->
         </ion-col>
         <ion-col size="4">
-          <ion-img src="../../assets/img/ciro.jpg"></ion-img>
+          <input type="image" src="../../assets/img/ciro.jpg" style="border: double;" height="50" width="100" (click)="ciro()"/>
+<!--           <ion-img src="../../assets/img/ciro.jpg"></ion-img> -->
         </ion-col>
       </ion-row>
 
